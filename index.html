@@ -3,92 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <title>My Weekly Schedule</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="code6-1_layout.css">
+  <link rel="stylesheet" href="code6-1_table.css">
 </head>
 <body>
   <header>
     <h1>My Weekly Schedule</h1>
   </header>
   <table>
-    <caption>Typical Week</caption>
+    <caption>Typical Week (24 Hours)</caption>
     <colgroup>
       <col id="firstCol" />
-      <col id="hourCols" span="12" />
+      <col id="hourCols" span="24" />
     </colgroup>
     <thead>
       <tr>
         <th>Day</th>
-        <th>6 AM</th>
-        <th>7 AM</th>
-        <th>8 AM</th>
-        <th>9 AM</th>
-        <th>10 AM</th>
-        <th>11 AM</th>
-        <th>12 PM</th>
-        <th>1 PM</th>
-        <th>2 PM</th>
-        <th>3 PM</th>
-        <th>4 PM</th>
-        <th>5 PM</th>
+        <th>12 AM</th><th>1 AM</th><th>2 AM</th><th>3 AM</th><th>4 AM</th><th>5 AM</th>
+        <th>6 AM</th><th>7 AM</th>
+        <th>8 AM</th><th>9 AM</th><th>10 AM</th><th>11 AM</th>
+        <th>12 PM</th><th>1 PM</th><th>2 PM</th><th>3 PM</th><th>4 PM</th><th>5 PM</th>
+        <th>6 PM</th><th>7 PM</th><th>8 PM</th><th>9 PM</th><th>10 PM</th><th>11 PM</th>
       </tr>
     </thead>
     <tbody>
+
+<!-- Monday -->
       <tr>
         <th>Monday</th>
-        <td colspan="2">Morning Routine</td>
-        <td colspan="4">Work / Projects</td>
-        <td>Lunch</td>
-        <td colspan="4">Work / Meetings</td>
-        <td>Exercise</td>
+        <td colspan="6">Sleeping</td>
+        <td rowspan="7" colspan="2">Morning Routine</td>
+        <td colspan="3">Practice Drawing</td>
+        <td rowspan="7">Lunch</td>
+        <td colspan="4">Reading/Video Games</td>
+        <td colspan="2">Exercise</td>
+        <td colspan="1">Dinner</td>
+        <td colspan="4">Video Games/Wind Down</td>
+        <td colspan="1">Sleeping</td>
       </tr>
+
+<!-- Tuesday -->
       <tr>
         <th>Tuesday</th>
-        <td colspan="2">Morning Routine</td>
-        <td colspan="4">Work / Database Tasks</td>
-        <td>Lunch</td>
-        <td colspan="4">Team Collaboration</td>
-        <td>Exercise</td>
+        <td colspan="6">Sleeping</td>
+        <td colspan="2">MG-206 Lecture</td>
+        <td>Errands</td>
+        <td colspan="4">Hobbies</td>
+        <td colspan="2">Exercise</td>
+        <td colspan="1">Dinner</td>
+        <td colspan="4">Reading/Wind Down</td>
+        <td colspan="1">Sleeping</td>
       </tr>
+
+<!-- Wednesday -->
       <tr>
         <th>Wednesday</th>
-        <td colspan="2">Morning Routine</td>
-        <td colspan="4">Work / SQL Development</td>
-        <td>Lunch</td>
-        <td colspan="4">Documentation & Testing</td>
-        <td>Exercise</td>
+        <td colspan="6">Sleeping</td>
+        <td colspan="3">Walk Dog at Park</td>
+        <td colspan="4">Assignments</td>
+        <td colspan="2">Exercise</td>
+        <td colspan="1">Dinner</td>
+        <td colspan="1">Assignments</td>
+        <td colspan="3">Reading/Wind Down</td>
+        <td colspan="1">Sleeping</td>
       </tr>
+
+<!-- Thursday -->
       <tr>
         <th>Thursday</th>
-        <td colspan="2">Morning Routine</td>
-        <td colspan="4">Work / Meetings</td>
-        <td>Lunch</td>
-        <td colspan="4">Work / Troubleshooting</td>
-        <td>Exercise</td>
+        <td colspan="6">Sleeping</td>
+        <td colspan="3">Shower Dog/Clip Dog Nails</td>
+        <td colspan="3">Prepare for Lecture</td>
+        <td colspan="2">CS222 Lecture</td>
+        <td colspan="2">Exercise</td>
+        <td colspan="1">Dinner</td>
+        <td colspan="3">Watch movies/TV Series</td>
+        <td colspan="1">Sleeping</td>
       </tr>
+
+<!-- Friday -->
       <tr>
         <th>Friday</th>
-        <td colspan="2">Morning Routine</td>
-        <td colspan="4">Work / Wrap-up</td>
-        <td>Lunch</td>
-        <td colspan="4">Reports & Planning</td>
-        <td>Social / Relax</td>
+        <td colspan="6">Sleeping</td>
+        <td colspan="3">Assignments</td>
+        <td colspan="4">Errands/Family Time</td>
+        <td colspan="4">Social/Relax</td>
+        <td colspan="3">Assignments</td>
+        <td colspan="1">Contact Friends Stateside</td>
       </tr>
+
+<!-- Saturday -->
       <tr>
         <th>Saturday</th>
-        <td colspan="3">Morning Routine</td>
+        <td colspan="2">Contact Friends stateside</td>
+        <td colspan="4">Sleeping</td>
         <td colspan="3">Personal Projects</td>
-        <td>Lunch</td>
-        <td colspan="3">Errands / Family Time</td>
+        <td colspan="3">Errands/Family Time</td>
         <td colspan="2">Leisure</td>
+        <td colspan="2">Exercise</td>
+        <td colspan="2">Meditate</td>
+        <td colspan="2">Video Editing</td>
+        <td colspan="1">Sleeping</td>
       </tr>
+
+<!-- Sunday -->
       <tr>
         <th>Sunday</th>
-        <td colspan="3">Morning Routine</td>
+        <td colspan="6">Sleeping</td>
         <td colspan="3">Community / Hobbies</td>
-        <td>Lunch</td>
         <td colspan="3">Relaxation</td>
+        <td colspan="2">Family Time</td>
+        <td colspan="2">Walk Dog at Park</td>
         <td colspan="2">Prep for Week</td>
+        <td colspan="1">check if missing assignments</td>
+        <td colspan="1">Reading/Wind Down</td>
+        <td colspan="1">turn in any Assignments</td>
       </tr>
+
     </tbody>
   </table>
 </body>
